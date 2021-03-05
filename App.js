@@ -10,7 +10,7 @@ import {
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text>test</Text>
+      <View style={styles.box}></View>
     </View>
   );
 };
@@ -21,6 +21,12 @@ const styles = StyleSheet.create({
 
     alignItems: `center`,
     justifyContent: `center`,
+  },
+  box: {
+    width: 100,
+    height: 50,
+
+    backgroundColor: `#555`,
   },
 });
 
