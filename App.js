@@ -10,7 +10,13 @@ import {
 const App = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.box}></View>
+      <View style={{marginBottom: 50}}>
+        <Text style={{fontSize: 30, fontWeight: `600`, color: `#51b8c2`}}>
+          YR Practice
+        </Text>
+      </View>
+      <TextInput style={styles.inputstyle} placeholder={`ID`}></TextInput>
+      <TextInput style={styles.inputstyle} placeholder={`PASSWORD`}></TextInput>
     </View>
   );
 };
@@ -22,11 +28,11 @@ const styles = StyleSheet.create({
     alignItems: `center`,
     justifyContent: `center`,
   },
-  box: {
-    width: 100,
-    height: 50,
+  inputstyle: {
+    width: `80%`,
+    height: 40,
 
-    backgroundColor: `#555`,
+    marginBottom: 15,
   },
 });
 
